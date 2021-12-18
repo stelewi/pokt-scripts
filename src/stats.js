@@ -48,8 +48,7 @@ function mode(numbers) {
     return modes;
 }
 function range(numbers) {
-    numbers.sort();
-    return [numbers[0], numbers[numbers.length - 1]];
+    return [Math.min.apply(Math, numbers), Math.max.apply(Math, numbers)];
 }
 
 export {
