@@ -52,7 +52,7 @@ function completedCall(millis)
 function ethRelay()
 {
     const walletAddress = ethAddresses[Math.floor(Math.random()*ethAddresses.length)];
-    console.log(`Get eth Kraken account balance for address ${walletAddress}`);
+    console.log(`Get eth account balance for address ${walletAddress}`);
     return poktRelayBody("0021", ethGetBalancePayload(walletAddress));
 }
 
